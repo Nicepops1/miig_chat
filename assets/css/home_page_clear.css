@@ -161,17 +161,18 @@ nav{
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    min-width: 73%;
     visibility: visible;
+    flex: 1 1 auto;
 }
 
 /*Информация касаемо пользователя, блок сверху*/
 .chat-info{
+    flex: 1 1 auto;
     background-color: #fff;
     display: inline-flex;
     flex-direction: row;
-    min-width: 100%;
     height: 3.5rem;
+    padding-top: .2rem;
     padding-left: 2rem;
     border-left: 1px solid grey;
     box-shadow: 0px 1px 5px -1px rgba(0,0,0,.21);
@@ -219,7 +220,7 @@ nav{
 .chat-panel{
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    flex: 1 1 auto;
 }
 
 /*Основная область чата*/
@@ -228,32 +229,35 @@ nav{
     align-items: center;
     flex-direction: column;
     height: 90vh;
+    flex: 1 1 auto;
 }
 
 /*Внешний контейнер чата*/
 .out-chat-window{
-    width: 100%;
     display: flex;
     justify-content: center;
-    min-height: 80%;
+    flex: 1 1 auto;
 }
 /*Основной контейнер чата*/
 .chat-window{
     min-height: 100%;
-    max-width: 60%;
-    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: inline-flex;
     flex-direction: column-reverse;
     justify-content: flex-start;
     scrollbar-width: none;
     scrollbar-color: grey;
     overflow-y: auto;
+    flex: 0 1 inherit;
 }
 /*Строка чата*/
 .chat-row{
-    min-width: 100%;
+    flex: 1 1 auto;
     display: flex;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
 /*Классы guest и host находятся вместе с классом chat-row и отвечают за то,
 к какой стороне прикрелено сообщение */
@@ -265,13 +269,15 @@ nav{
 }
 /*Оформление сообщений*/
 .host-messege, .guest-messege{
+    flex-wrap: wrap;
     background-color: #fff;
     border-radius: 10px;
     box-shadow:  0 .5rem .5rem 0 rgba(0,0,0,.2);
     display: inline-flex;
-    max-width: 50%;
     padding: 1rem;
+    max-width: 50%;
     flex-direction: row;
+    
 }
 /*Цвета сообщений*/
 .host-messege{
@@ -289,7 +295,7 @@ nav{
     display: flex;
     align-items: center;
     padding-top: .5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 }
 .input{
     margin: .3rem;
