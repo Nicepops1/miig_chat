@@ -253,11 +253,11 @@ nav{
 }
 /*Строка чата*/
 .chat-row{
-    flex: 1 1 auto;
     display: flex;
     margin-top: 1rem;
     margin-bottom: 1rem;
     flex-wrap: wrap;
+    
 }
 /*Классы guest и host находятся вместе с классом chat-row и отвечают за то,
 к какой стороне прикрелено сообщение */
