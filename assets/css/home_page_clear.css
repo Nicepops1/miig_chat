@@ -269,15 +269,21 @@ nav{
 }
 /*Оформление сообщений*/
 .host-messege, .guest-messege{
-    flex-wrap: wrap;
     background-color: #fff;
     border-radius: 10px;
     box-shadow:  0 .5rem .5rem 0 rgba(0,0,0,.2);
     display: inline-flex;
     padding: 1rem;
     max-width: 50%;
+    flex-direction: column;
+}
+.time-send-row{
+    display: flex;
     flex-direction: row;
-    
+    align-items: flex-end;
+    justify-content: space-between;
+    opacity: 50%;
+    font-size: 13px;
 }
 /*Цвета сообщений*/
 .host-messege{
